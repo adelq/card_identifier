@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='card_identifier',
-    description='Python library for credit/debit card identification and'
+    description='Python library for credit/debit card identification and '
                 'utilities',
     long_description='Card Identifier takes out the busy work from simple card'
-    'operations. This includes validation, formatting, and identification.',
+    ' operations. This includes validation, formatting, and identification.',
     url='https://github.com/adelq/card_identifier',
     version='1.0',
     author='Adel Qalieh',
