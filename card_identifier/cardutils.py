@@ -8,7 +8,7 @@ def format_card(card_num):
     import re
     card_num = str(card_num)
     # Regex to remove any nondigit characters
-    return re.sub("\D", "", card_num)
+    return re.sub(r"\D", "", card_num)
 
 
 def validate_card(card_num):
