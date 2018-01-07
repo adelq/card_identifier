@@ -23,3 +23,21 @@ True
 >>> identify_card_issuer(card)["type"]
 "CREDIT"
 ```
+
+Card Identifier takes out the busy work from simple card operations. This
+includes validation, formatting, and identification.
+
+## Features
+
+* Card number validation
+* Card number reformatting
+* Identify card type (VISA, MasterCard, etc)
+* Identify card issuer using binlist.net API
+
+Card Identifier supports Python 2.7 and 3.4–3.6.
+
+## Installation
+
+To install Card Identifier, use pip:
+
+    $ pip install card_identifier
