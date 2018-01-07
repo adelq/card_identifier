@@ -1,5 +1,5 @@
 from nose.tools import assert_equals
-from card_identifier.card_type import identify_credit_card_type
+from card_identifier.card_type import identify_card_type
 
 # Test card numbers, more should be added.
 amex_cards = [
@@ -31,7 +31,7 @@ unknown_cards = [
 
 class TestIdentifyCreditCardType(object):
     def check_card(self, card, type):
-        assert_equals(identify_credit_card_type(card), type)
+        assert_equals(identify_card_type(card), type)
 
     def test_amex(self):
         for amex_card in amex_cards:

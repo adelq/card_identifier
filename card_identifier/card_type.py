@@ -13,7 +13,7 @@ DISCOVER_4 = '6011',
 VISA_1 = '4',
 
 
-def identify_credit_card_type(card_num):
+def identify_card_type(card_num):
     """
     Identifies the card type based on the card number.
     This information is provided through the first 6 digits of the card number.
@@ -21,19 +21,19 @@ def identify_credit_card_type(card_num):
     Input: Card number, int or string
     Output: Card type, string
 
-    >>> identify_credit_card_type('370000000000002')
+    >>> identify_card_type('370000000000002')
     'AMEX'
 
-    >>> identify_credit_card_type('6011000000000012')
+    >>> identify_card_type('6011000000000012')
     'Discover'
 
-    >>> identify_credit_card_type('5424000000000015')
+    >>> identify_card_type('5424000000000015')
     'MasterCard'
 
-    >>> identify_credit_card_type('4007000000027')
+    >>> identify_card_type('4007000000027')
     'Visa'
 
-    >>> identify_credit_card_type('400700000002')
+    >>> identify_card_type('400700000002')
     'Unknown'
     """
 
