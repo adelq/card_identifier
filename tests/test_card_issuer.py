@@ -30,11 +30,11 @@ unknown_cards = [
 
 # Map of issuer name to what all the cards match to
 issuers = {
-    "amex": "VISA",
-    "discover": "DISCOVER",
-    "mc": "MASTERCARD",
-    "visa": "VISA",
-    "maestro": "VISA",
+    "amex": "amex",
+    "discover": "discover",
+    "mc": "mastercard",
+    "visa": "visa",
+    "maestro": "mastercard",
     "unknown": "Not found"
 }
 
