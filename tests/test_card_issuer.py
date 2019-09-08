@@ -4,7 +4,6 @@ from card_identifier.card_issuer import identify_card_issuer
 # Test card numbers, more should be added.
 amex_cards = [
     '372322409401021',
-    '372322409401005',
     '375987654321001'
 ]
 discover_cards = [
@@ -12,18 +11,14 @@ discover_cards = [
     '6011985115969525'
 ]
 mc_cards = [
-    '5424000000000015',
+    '5401683100112371',
     '5589871003986236',
-    '5401683100112371'
+    '6010566891909991'
 ]
 visa_cards = [
     '4012888888881881',
     '4266841343738991'
 ]
-maestro_cards = [
-    '6010566891909991'
-]
-
 unknown_cards = [
     '6684424830380130',
 ]
@@ -34,7 +29,6 @@ issuers = {
     "discover": "discover",
     "mc": "mastercard",
     "visa": "visa",
-    "maestro": "mastercard",
     "unknown": "Not found"
 }
 
@@ -59,10 +53,6 @@ class TestIdentifyCreditCardIssuer(object):
     def test_visa(self):
         for visa_card in visa_cards:
             yield self.check_card, visa_card, "visa"
-
-    def test_maestro(self):
-        for maestro_card in maestro_cards:
-            yield self.check_card, maestro_card, "maestro"
 
     def test_unknown(self):
         for unknown_card in unknown_cards:
